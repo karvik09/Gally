@@ -18,7 +18,7 @@
 2. Add the dependency
 ```
 dependencies {
-		implementation 'implementation 'com.github.VIKAS9899:Gally:1.0'
+		implementation 'com.github.VIKAS9899:Gally:1.0'
 	}
 ```
 2. Add MediaStoreActivity into your AndroidManifest.xml
