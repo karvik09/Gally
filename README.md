@@ -21,7 +21,7 @@ dependencies {
 		implementation 'implementation 'com.github.VIKAS9899:Gally:1.0'
 	}
 ```
-2. Add UCropActivity into your AndroidManifest.xml
+2. Add MediaStoreActivity into your AndroidManifest.xml
 
     ```
     <activity android:name="com.vikas.gally.activity.MediaStoreActivity"
@@ -38,7 +38,7 @@ dependencies {
                 .build();
     ```
 
-4. Override `onActivityResult` method and handle uCrop result.
+4. Override `onActivityResult` method and handle result.
 
     ```java
     @Override
