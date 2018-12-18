@@ -21,14 +21,19 @@ dependencies {
 		implementation 'com.github.VIKAS9899:Gally:1.0'
 	}
 ```
-2. Add MediaStoreActivity into your AndroidManifest.xml
+3. Add MediaStoreActivity into your AndroidManifest.xml
 
     ```
     <activity android:name="com.vikas.gally.activity.MediaStoreActivity"
             android:screenOrientation="portrait"/>
     ```
+5. sdcard Read,Write Permission into AndroidManifest.xml
+    ```
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    ```
 
-3. The Gally configuration is created using the builder pattern.
+4. The Gally configuration is created using the builder pattern.
 
     ```java
     Decorator decorator = new Decorator.Builder()
@@ -38,7 +43,7 @@ dependencies {
                 .build();
     ```
 
-4. Override `onActivityResult` method and handle result.
+5. Override `onActivityResult` method and handle result.
 
     ```java
     @Override
