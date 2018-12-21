@@ -41,6 +41,10 @@ dependencies {
                 .setTitle("GallySample")
                 .setTickColor(R.color.colorAccent)
                 .build();
+		
+    Gally.getInstance()
+                .decorateWith(decorator)
+                .launch(this);
     ```
 
 5. Override `onActivityResult` method and handle result.
